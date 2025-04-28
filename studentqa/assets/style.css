@@ -1,0 +1,865 @@
+/* Student Forum Modern Look */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #eef2f5;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 30px 0 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  animation: fadeDown 1s ease-out;
+}
+
+/* User Info Bar */
+.user-info {
+  background-color: #357ABD;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.user-info a, .user-info span {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.user-info a:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #2d6ca2;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: #255784;
+  transform: translateY(-2px);
+}
+
+/* Main Content Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 35px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fafafa;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 6px solid #4a90e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 0.85em;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 30%; 
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Links Inside Posts */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Fade Animation for Title */
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add Question Form */
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form input[type="file"] {
+  margin-bottom: 15px;
+}
+
+form button,
+form input[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #357ABD;
+}
+
+form .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+form .home-link:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT FORM */
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-container button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-container button:hover {
+  background-color: #357ABD;
+}
+
+.contact-container .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.contact-container .home-link:hover {
+  text-decoration: underline;
+}
+
+/* Center the form and improve styling */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center; /* Center-align content */
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  text-align: left; /* Align label to the left */
+}
+
+.login-container input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #357ABD;
+}
+
+.login-container .register-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.login-container .register-link:hover {
+  text-decoration: underline;
+}
+
+/* Register Form Styles */
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center; /* Center-align content */
+}
+
+.register-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  text-align: left; /* Align label to the left */
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.register-container button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.register-container button:hover {
+  background-color: #357ABD;
+}
+
+.register-container .login-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.register-container .login-link:hover {
+  text-decoration: underline;
+}
+
+/* Admin Page Styles */
+.admin-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.admin-container form {
+  margin-bottom: 20px;
+}
+
+.admin-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-container form input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-container form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-container form button:hover {
+  background-color: #357ABD;
+}
+
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-container table th,
+.admin-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-container table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-container .action-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: #4a90e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.admin-container .action-buttons a:hover {
+  background-color: #357ABD;
+}
+
+.admin-container .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.admin-container .home-link:hover {
+  text-decoration: underline;
+}
+
+/* Admin Page Styles */
+.admin-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.admin-container form {
+  margin-bottom: 20px;
+}
+
+.admin-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-container form input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-container form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-container form button:hover {
+  background-color: #357ABD;
+}
+
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-container table th,
+.admin-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-container table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-container .action-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: #4a90e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.admin-container .action-buttons a:hover {
+  background-color: #357ABD;
+}
+
+.admin-container .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.admin-container .home-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Manage Modules Page Styles */
+.modules-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.modules-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modules-container form {
+  margin-bottom: 20px;
+}
+
+.modules-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modules-container form input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modules-container form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modules-container form button:hover {
+  background-color: #357ABD;
+}
+
+.modules-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.modules-container table th,
+.modules-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.modules-container table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+}
+
+.modules-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.modules-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.modules-container .action-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: #4a90e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.modules-container .action-buttons a:hover {
+  background-color: #357ABD;
+}
+
+.modules-container .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.modules-container .home-link:hover {
+  text-decoration: underline;
+}
+
+/* Messages Page Styles */
+.messages-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.messages-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.messages-container .no-messages {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.messages-table th,
+.messages-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.messages-table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.messages-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.messages-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.messages-table td {
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+.messages-container .home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.messages-container .home-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.admin-container h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-container table th,
+.admin-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-container table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-container .action-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: #4a90e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.admin-container .action-buttons a:hover {
+  background-color: #357ABD;
+}
